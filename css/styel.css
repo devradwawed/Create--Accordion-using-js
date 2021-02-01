@@ -1,0 +1,40 @@
+button:focus{
+  outline: none;
+  
+}
+
+.accordion{
+  width: 100%;
+  border: 0;
+  background-color: #eee;
+  font-size: 16px;
+  padding: 20px;
+  text-align: left;
+  transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in;
+  -ms-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+}
+.accordion:hover{
+  background-color: #ccc;
+}
+.accordion::after{
+  content: "\002B";
+  float: right;
+  font-weight: bold;
+  color: #777;
+}
+.active::after{
+  content: "\2212";
+}
+.dec {
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in;
+  -ms-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+}
